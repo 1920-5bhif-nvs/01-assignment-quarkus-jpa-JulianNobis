@@ -5,10 +5,51 @@ Ein Quarkus JPA-Projekt zur <strong>Administration von Tennisspielern</strong> i
 ## Bestandteile des Projekts
 
 ### Quarkus
+So kann Quarkus im Dev-Mode gestartet werden. Ebenfalls wurde die 'resteasy-jsonb' Extensions hinzugefügt.
+````
+./mvnw compile quarkus:dev:
+./mvnw quarkus:add-extension -Dextensions="resteasy-jsonb"
+````
 
 ### Datenbank
+Ich habe mich für eine Postgres (in Docker) entschieden.
+````
+docker pull postgres
+docker run -e POSTGRES_PASSWORD=passme -e POSTGRES_USER=postgres -e POSTGRES_DB=mydatabase -d -p 5432:5432 postgres
+````
 
-### REST API
+## REST API
+
+### PlayerEndpoint
+#### GET
+
+#### GET{id}
+
+#### GET BEST PLAYER
+
+#### DELETE{id}
+
+### TeamEndpoint
+#### GET
+
+#### GET{id}
+
+#### DELETE{id}
+
+#### POST
+
+### MatchEndpoint
+#### GET
+
+#### GET{id}
+
+#### GET ALL SINGLES
+
+#### GET ALL DOUBLES
+
+#### GET SINGLE{id}
+
+#### GET DOUBLE{id}
 
 ## CLD 
 
