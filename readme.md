@@ -4,6 +4,9 @@ Ein Quarkus JPA-Projekt zur <strong>Administration von Tennisspielern</strong> i
 
 ## Bestandteile des Projekts
 
+## CLD
+![alt text](CLD.png)
+
 ### Quarkus
 So kann Quarkus im Dev-Mode gestartet werden. Ebenfalls wurde die 'resteasy-jsonb' Extension hinzugefügt.
 ````
@@ -49,9 +52,4 @@ docker run -e POSTGRES_PASSWORD=passme -e POSTGRES_USER=postgres -e POSTGRES_DB=
 
 #### GET SINGLE{id}
 
-#### GET DOUBLE{id}
-
-## CLD 
-
-## ERD
-
+#### GET DOUBLE{id} 
